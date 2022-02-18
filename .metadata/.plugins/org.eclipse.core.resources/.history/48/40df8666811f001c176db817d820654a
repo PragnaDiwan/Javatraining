@@ -1,0 +1,17 @@
+
+public class Array_Static {
+
+	public static void main(String[] args) {
+	
+		int[] emp=new int[4];
+		
+		emp[0]=20;
+		emp[1]=40;
+		emp[2]=50;
+		emp[3]=60;
+		
+		System.out.println(emp[0]);
+
+	}
+
+}

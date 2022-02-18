@@ -1,0 +1,21 @@
+
+public class DataType {
+
+	public static void main(String[] args) {
+		byte b=20;
+		System.out.println(b);
+		byte b1=10;
+		System.out.println(b+b1);
+		
+		System.out.println(b); // byte Range= -128 to 127
+		
+		  short s1=1234;                   //short range -32768 to 32767
+		  System.out.println(s1);
+		  
+		  int i=-1234567890;
+		  System.out.println(i);
+		  
+		                                 //int range -2147
+		
+	}
+}

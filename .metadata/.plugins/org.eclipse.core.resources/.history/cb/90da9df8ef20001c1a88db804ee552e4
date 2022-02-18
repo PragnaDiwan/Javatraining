@@ -1,0 +1,40 @@
+package interview_Pro;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Print1t0100 {
+
+	public static void main(String[] args) {
+		// WAp print 1 to 100 without using number
+		
+	    int i='a'/'a';
+	    
+	    System.out.println(i);
+	    
+	    String s1="1111111111";
+	    
+	    for(int one=i;one<=s1.length()*s1.length();one++)
+	    {
+	    	System.out.println(one);
+	    }
+		
+		System.out.println("-------------------------------------------------------------------");
+		
+		//Wap print hello world without using semicolon(;)
+		
+		
+		if(System.out.printf("hello world").equals(null))
+		{
+			
+		}
+		
+		
+		
+		
+	    
+	    
+	    
+	}
+
+}

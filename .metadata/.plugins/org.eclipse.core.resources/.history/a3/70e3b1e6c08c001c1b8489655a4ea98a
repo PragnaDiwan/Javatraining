@@ -1,0 +1,43 @@
+package registeropen;
+
+import static org.testng.Assert.assertFalse;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Register   {
+	
+	WebDriver driver;
+	registerpage r1;
+	
+	@BeforeClass
+	public void loginsetup()
+	{
+		WebDriverManager.chromedriver().setup();
+		driver=new ChromeDriver();
+		
+		driver.get("https://demo.opencart.com/index.php?route=account/register");
+	
+		driver.manage().window().maximize();
+		 r1= new registerpage(driver);
+	
+		
+	}
+	
+	@Test
+	public void loginfail()
+	{
+		r1.loginlink();
+	r1.loginunsuccess();
+	
+	}
+	
+
+
+}

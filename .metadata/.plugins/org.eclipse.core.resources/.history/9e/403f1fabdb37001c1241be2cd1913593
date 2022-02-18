@@ -1,0 +1,10 @@
+package selenium_Session;
+
+public class Amazon_Cate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

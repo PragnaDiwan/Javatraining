@@ -1,0 +1,35 @@
+package interview_Pro;
+
+public class functionInjava {
+	
+	
+	public void test()
+	{
+		System.out.println("pass");
+		int i=10;//local
+		System.out.println(i);
+	}
+	
+	public void getPrint()
+	{
+		System.out.println("printmypaper");
+	}
+	
+	
+
+	public static void main(String[] args) {
+		// we can not create function in function
+		//can call function with another fnction
+		//1.no input no return
+		
+		//void means no return
+		
+		functionInjava obj=new functionInjava();
+		
+		obj.test();
+		
+		obj.getPrint();
+		
+	}
+
+}

@@ -1,0 +1,37 @@
+package selenium_Session;
+
+public class Crossbrowsertest {
+
+	public static void main(String[] args) {
+
+		
+		String Browser="safari";
+		
+		switch (Browser.toLowerCase())
+		{
+		case "chrome":
+		{
+			System.out.println("chrome browser");
+			break;
+		}
+			
+		case "firefox":
+		{
+			System.out.println("ff browser");
+			break;
+		}
+			
+		case "safari":
+		{
+			System.out.println("safart browser");
+			break;
+		}
+			
+
+		default:
+			System.out.println("please pass the correct browser");
+		}
+		
+	}
+
+}

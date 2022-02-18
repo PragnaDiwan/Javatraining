@@ -1,0 +1,36 @@
+package selenium_Session;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class Elementutl {
+	
+	private  WebDriver driver;
+
+	public Elementutl(WebDriver driver)
+	{
+		this.driver=driver;
+	}
+	public  WebElement getelement(By locator)
+	{
+		return driver.findElement(locator);
+	}
+	
+	public  void dosendkeys(By locator,String value)
+	{
+		getelement(locator).sendKeys(value);
+	}
+	
+	public  void doclick(By locator)
+	{
+		getelement(locator).click();
+	}
+	
+
+	public  String dogettext(By locator)
+	{
+		return getelement(locator).getText();
+		
+	}
+}

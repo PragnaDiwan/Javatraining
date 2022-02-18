@@ -1,0 +1,30 @@
+package selenium_Session;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class Registrationpagetest {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		
+		Browserutil brutl=new Browserutil();
+		WebDriver driver=brutl.launchbrowser("chrome");
+		brutl.enterurl("https://demo.opencart.com/index.php?route=account/register");
+		String title=brutl.getPageTitle();
+		System.out.println("title is :"+title);
+		
+		By firstname=By.id("input-firstname");
+		By lastname=By.id("input-lastname");
+		By email=By.id("input-email");
+		
+		Elementutl eleutl=new Elementutl(driver);
+		eleutl.dosendkeys(firstname, "pragna");
+		eleutl.dosendkeys(lastname, "diwan");
+		eleutl.dosendkeys(email, "pragna@test.com");
+			Thread.sleep(5000);
+			
+			brutl.closebrowser();
+	}
+
+}

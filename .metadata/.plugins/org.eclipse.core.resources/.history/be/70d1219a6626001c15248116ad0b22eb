@@ -1,0 +1,24 @@
+package assignment;
+
+public class Primeornot {
+	
+	
+public static void main(String[] args) {
+//Define a method to find out if number is prime or not.
+	
+	
+	int number=10;
+	
+	for(int i=2;i>1;i++)
+	{
+	if(!(number%i==0))
+	{
+		System.out.println("prime number =" +number);
+	}
+	else
+	{
+		System.out.println("not prime number");
+	}}
+}
+
+}

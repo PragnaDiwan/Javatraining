@@ -1,0 +1,8 @@
+package assignment;
+
+public class Primeornot {
+public void prime()
+{
+	System.out.println("prime");
+}
+}

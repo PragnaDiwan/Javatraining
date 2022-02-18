@@ -1,0 +1,17 @@
+package selenium_Session;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class Launchfirefox {
+
+	public static void main(String[] args) {
+	
+		
+		System.setproperty()
+		
+		WebDriver driver=new FirefoxDriver();
+	}
+
+}

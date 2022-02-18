@@ -1,0 +1,22 @@
+package hello;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class sele {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "c://chromedriver_win32 (7)//chromedriver.exe");
+		WebDriver driver =new ChromeDriver();
+		driver.get("https://globalgarner.com/");
+		driver.manage().window().maximize();
+		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[2]/nav/div/div/div[4]/div/ul/li[4]/span/span/a")).click();
+		driver.findElement(By.xpath("/html/body/div[5]/div/div/div/div[2]/ul/li[1]/a/div")).click();
+		driver.findElement(By.xpath("//input[@name='username']")).click();
+		driver.findElement(By.xpath("//input[@name='password']")).click();
+	}
+	
+}
+	

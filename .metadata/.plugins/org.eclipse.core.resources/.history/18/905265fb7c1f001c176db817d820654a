@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class ArrayList_generic {
+
+	public static void main(String[] args) {
+
+		ArrayList<Integer>ar=new ArrayList<Integer>();
+		
+		ar.add(500);
+		ar.add(300);
+		ar.add(600);
+		ar.add(25);
+		System.out.println(ar.size());
+		System.out.println(ar.get(1));
+	}
+
+}

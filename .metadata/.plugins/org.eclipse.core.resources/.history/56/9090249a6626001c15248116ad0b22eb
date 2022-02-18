@@ -1,0 +1,9 @@
+package assignment;
+
+public class Primeornot {
+	
+	
+public static void main(String[] args) {
+//Define a method to find out if number is prime or not.
+	
+}}

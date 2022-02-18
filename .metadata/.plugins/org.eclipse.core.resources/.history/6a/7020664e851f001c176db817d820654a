@@ -1,0 +1,14 @@
+
+public class Factoria {
+
+	public static void main(String[] args) {
+		
+		
+		
+	for(int n=2;n<=4;n++)
+	{
+		System.out.println(n*(n-1));
+	}
+	}
+
+}

@@ -1,0 +1,88 @@
+package hello;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class sele {
+
+	@SuppressWarnings("deprecation")
+	public static void main(String[] args) throws InterruptedException {
+		
+		System.setProperty("webdriver.chrome.driver", "c://chromedriver_win32 (7)//chromedriver.exe");
+		WebDriver driver =new ChromeDriver();
+	
+		
+		driver.get("https://globalgarner.com/");
+		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+	
+		
+		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[2]/nav/div/div/div[4]/div/ul/li[4]/span/span/a")).click();
+		
+	//	driver.findElement(By.xpath("//img[@class='img-fluid rounded-circle']")).click();
+
+		driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[2]/ul/li[1]/a/div")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.name("username")).sendKeys("8141143966");
+		Thread.sleep(2000);
+		  driver.findElement(By.name("password")).sendKeys("global916");
+		  driver.findElement(By.xpath("//button[@class='bp3-button bp3-button bp3-intent-primary bp3-button bp3-default bp3-fill login-btn']")).click();
+		  driver.findElement(By.linkText("Best Shopping Websites")).click();
+		  
+		  
+		  
+		  
+		  int count=0;
+		  while(driver.findElement(By.xpath("//button[@class='bp3-button bp3-intent-primary btnLoadMoreBSW']")).isDisplayed()==true)
+		  {
+		  JavascriptExecutor js =(JavascriptExecutor)driver;
+		  js.executeScript("window.scrollBy(0,2000)");
+		  
+		  WebDriverWait wait = new WebDriverWait(driver, 30);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Load More')]"))); 
+		  
+		 driver.findElement(By.xpath("//button[@class='bp3-button bp3-intent-primary btnLoadMoreBSW']")).click(); 
+		  // click on loadmore button
+		  
+		  count++;
+		  System.out.println("count:"+count);
+		  List<WebElement>allbrands=driver.findElements(By.xpath("//div[@class=' brandsDiv']/a"));
+		  
+		  ArrayList<String> targets=new ArrayList<String>();
+		  //collect targets locations                                              
+		  
+		  for(WebElement brand:allbrands)
+		  {
+			  
+		        targets.add(brand.getAttribute("href"));  	
+		        System.out.println(brand.getAttribute("href")); //store all link for different location	  
+		  
+	}
+		  for (String target : targets) {
+	  			 
+  			  ((JavascriptExecutor) driver).executeScript("window.open()");
+	  		    ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());            //open all link on new tab
+	  		    driver.switchTo().window(tabs.get(1));                                                
+  			    System.out.println(tabs.size());
+  			  
+  			  driver.get(target);
+  			driver.findElement(By.xpath("/html/body/div[1]/div/div[3]/div[2]/div[3]/button/span")).click();
+		      
+		  }
+	
+	}
+	
+}}
+
+	

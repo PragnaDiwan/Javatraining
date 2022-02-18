@@ -1,0 +1,26 @@
+package assignment;
+
+public class Company {
+
+	public String name;
+	private int shareprice;
+	public String headquater;
+	
+	public void companyifo()
+	{
+		System.out.println(name);
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		Company c1=new Company();
+		c1.name="Microsoft";
+		c1.shareprice=1000;
+		c1.headquater="mumbai";
+	c1.companyifo();
+		
+		
+	}
+
+}

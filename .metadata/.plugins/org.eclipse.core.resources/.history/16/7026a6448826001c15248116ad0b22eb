@@ -1,0 +1,20 @@
+package assignment;
+
+import java.util.Arrays;
+
+public class ArraysSort {
+
+	public static void main(String[] args) {
+
+		int i[]=new int[4];
+		i[0]=12;
+		i[1]=13;
+		i[2]=4;
+		i[3]=10;
+	
+		System.out.println(i.toString());
+		
+	
+	}
+
+}

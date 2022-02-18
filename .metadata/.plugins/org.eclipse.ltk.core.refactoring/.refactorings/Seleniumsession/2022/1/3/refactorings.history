@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Elementutl.java&apos; to &apos;jan-2022-pomseries/src/main/java/com.qa.opencart.utlitlity&apos;&#x0D;&#x0A;- Original project: &apos;Seleniumsession&apos;&#x0D;&#x0A;- Destination element: &apos;jan-2022-pomseries/src/main/java/com.qa.opencart.utlitlity&apos;&#x0D;&#x0A;- Original element: &apos;selenium_Session.Elementutl.java&apos;" description="Copy compilation unit" destination="=jan-2022-pomseries/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.qa.opencart.utlitlity" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;selenium_Session{Elementutl.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1641980229392" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+
+public class Arraylist_concept {
+
+	public static void main(String[] args) { 
+		
+		// ArrayList is a default class and new keyword help to create new object ar
+		
+		ArrayList ar=new ArrayList();
+		ar.add(100);
+		ar.add(500);
+		ar.add(400);
+		System.out.println(ar.size());
+		
+		System.out.println(ar.get(1));
+		for(int i=0;i<ar.size();i++)
+		{
+			System.out.println(ar.get(i));
+			
+			
+		}
+		
+		
+		ArrayList ar1=new ArrayList();
+		
+		ar1.add(600);
+		ar1.add(800);
+	    ar1.add(990);
+	    System.out.println(ar1.get(2));
+		
+	}
+
+}

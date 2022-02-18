@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ElementUtil.java&apos; to &apos;globalgarnepom/src/main/java/qa.globalgarner.constants&apos;&#x0D;&#x0A;- Original project: &apos;POMSeries2&apos;&#x0D;&#x0A;- Destination element: &apos;globalgarnepom/src/main/java/qa.globalgarner.constants&apos;&#x0D;&#x0A;- Original element: &apos;com.qa.opencart.constants.ElementUtil.java&apos;" description="Copy compilation unit" destination="=globalgarnepom/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;qa.globalgarner.constants" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.qa.opencart.constants{ElementUtil.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1642587498596" units="1" version="1.0"/>
+</session>

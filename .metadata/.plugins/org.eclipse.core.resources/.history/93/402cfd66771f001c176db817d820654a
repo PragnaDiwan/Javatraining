@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+
+public class Arraylist_concept {
+
+	public static void main(String[] args) { 
+		
+		ArrayList ar=new ArrayList();
+		ar.add(100);
+		ar.add(500);
+		ar.add(400);
+		
+		System.out.println(ar.get(1));
+		for(int i=0;i<ar.size();i++)
+		{
+			System.out.println(ar.get(i));
+		}
+		
+		
+	}
+
+}

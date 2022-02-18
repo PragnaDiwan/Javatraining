@@ -1,0 +1,18 @@
+package interview_Pro;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Print1t0100 {
+
+	public static void main(String[] args) {
+		// WAp print 1 to 100 without using number
+		
+	    int one='a'/'a';
+	    
+	    System.out.println(one);
+		
+		
+	}
+
+}

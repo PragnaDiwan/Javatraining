@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-18T08:43:44Z" name="Default suite" finished-at="2022-02-18T08:43:50Z" duration-ms="6637">
+    <groups>
+    </groups>
+    <test started-at="2022-02-18T08:43:44Z" name="Default test" finished-at="2022-02-18T08:43:50Z" duration-ms="6637">
+      <class name="com.qa.opencart.pages.test.LoginPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.opencart.pages.test.LoginPageTest@52f27fbd]" started-at="2022-02-18T08:43:44Z" name="setup" finished-at="2022-02-18T08:43:48Z" duration-ms="4652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginpagTitletest()[pri:1, instance:com.qa.opencart.pages.test.LoginPageTest@52f27fbd]" started-at="2022-02-18T08:43:48Z" name="loginpagTitletest" finished-at="2022-02-18T08:43:48Z" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginpagTitletest -->
+        <test-method signature="loginpageurltest()[pri:2, instance:com.qa.opencart.pages.test.LoginPageTest@52f27fbd]" started-at="2022-02-18T08:43:48Z" name="loginpageurltest" finished-at="2022-02-18T08:43:48Z" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginpageurltest -->
+        <test-method signature="forgetpwdlinkexist()[pri:3, instance:com.qa.opencart.pages.test.LoginPageTest@52f27fbd]" started-at="2022-02-18T08:43:48Z" name="forgetpwdlinkexist" finished-at="2022-02-18T08:43:49Z" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgetpwdlinkexist -->
+        <test-method signature="registerlinktext()[pri:4, instance:com.qa.opencart.pages.test.LoginPageTest@52f27fbd]" started-at="2022-02-18T08:43:49Z" name="registerlinktext" finished-at="2022-02-18T08:43:49Z" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerlinktext -->
+        <test-method signature="logintest()[pri:5, instance:com.qa.opencart.pages.test.LoginPageTest@52f27fbd]" started-at="2022-02-18T08:43:49Z" name="logintest" finished-at="2022-02-18T08:43:50Z" duration-ms="1652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.opencart.pages.test.LoginPageTest@52f27fbd]" started-at="2022-02-18T08:43:50Z" name="teardown" finished-at="2022-02-18T08:43:50Z" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.opencart.pages.test.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

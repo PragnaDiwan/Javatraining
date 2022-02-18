@@ -1,0 +1,44 @@
+package assignment;
+
+public class Prime_not {
+	
+	public void prime(int num)
+	{
+		boolean flag=true;
+		if((num==0)||(num==1))
+		{
+			System.out.println(" prime number :"+num);
+		}
+		else
+			for(int i=2;i<num/2;i++)
+			{
+				if(num%i==0)
+				{
+					System.out.println("  prime number:"+num);
+					flag=false;
+					break;
+				}
+			
+			}
+		
+		if(!flag)
+		{
+			System.out.println("not a prime number");
+		}
+	}
+	
+
+	public static void main(String[] args)
+	{
+		
+		
+		Prime_not p1=new Prime_not();
+		p1.prime(4);
+		
+		
+		
+		
+	}
+	
+	
+}
